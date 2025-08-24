@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentPrep - AI Interview Preparation Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">AgentPrep</a>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="animated-bg">
+            <div class="floating-particles" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" id="hero-title">The AI Agent That Creates Your Interview Prep Strategy</h1>
+                <p class="hero-subtitle" id="hero-subtitle">Simply copy & paste any job description and get a personalized interview preparation guide. </p>
+                
+                <!-- Interactive Input Box -->
+                <div class="input-container">
+                    <div class="input-field">
+                        <input type="text" id="job-input" placeholder="Type where you're interviewing for what position (e.g., Senior PM at AWS)" />
+                        <div class="input-controls">
+                            <div class="left-controls">
+                                <button class="control-btn active" title="Search">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.35-4.35"></path>
+                                    </svg>
+                                </button>
+                                <button class="control-btn" title="Random">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                                        <path d="M21 3v5h-5"></path>
+                                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L3 16"></path>
+                                        <path d="M3 21v-5h5"></path>
+                                    </svg>
+                                </button>
+                                <button class="control-btn" title="Suggestions">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4"></path>
+                                        <path d="M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"></path>
+                                        <path d="M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"></path>
+                                        <path d="M12 3c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"></path>
+                                        <path d="M12 21c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="right-controls">
+                                <button class="control-btn" title="Upload">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7,10 12,15 17,10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                </button>
+                                <button class="control-btn" title="Voice Input">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                                    </svg>
+                                </button>
+                                <button class="submit-btn" title="Submit">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 2L11 13"></path>
+                                        <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section (Hidden by default) -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Copy Job Description</h3>
+                    <p class="step-description">Simply copy and paste any job posting or description you want to prepare for.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">AI Analysis</h3>
+                    <p class="step-description">Our AI analyzes the requirements, skills, and company culture to create your strategy.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Get Your Guide</h3>
+                    <p class="step-description">Receive a comprehensive preparation guide with practice questions, tips, and resources.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Ace Your Interview</h3>
+                    <p class="step-description">Walk into your interview with confidence, knowing you're fully prepared.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="js/animations.js"></script>
+    <script>
+        // Debug logging
+        console.log('Main script loaded');
+        
+        // Check if elements exist
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded');
+            console.log('Hero title:', document.getElementById('hero-title'));
+            console.log('Hero subtitle:', document.getElementById('hero-subtitle'));
+            console.log('Input container:', document.querySelector('.input-container'));
+            
+            // Ensure elements are visible
+            const elements = document.querySelectorAll('.hero-title, .hero-subtitle, .input-container');
+            elements.forEach(el => {
+                el.style.opacity = '1';
+                console.log('Made visible:', el);
+            });
+        });
+        
+        // Simple toggle for How It Works section
+        document.querySelector('a[href="#how-it-works"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            const howItWorks = document.getElementById('how-it-works');
+            howItWorks.classList.toggle('visible');
+            
+            // Smooth scroll to section if showing
+            if (howItWorks.classList.contains('visible')) {
+                howItWorks.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+</html>
