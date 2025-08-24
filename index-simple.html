@@ -64,10 +64,30 @@
             padding: 1rem 0;
         }
 
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
         .nav-right {
             display: flex;
             align-items: center;
             gap: 2rem;
+        }
+
+        .back-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-link:hover {
+            color: var(--light);
         }
 
         .logo {
@@ -330,7 +350,10 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
-            <a href="#" class="logo">AgentPrep</a>
+            <div class="nav-left">
+                <a href="#" class="logo">AgentPrep</a>
+                <a href="index.html" class="back-link">← Back to Full Version</a>
+            </div>
             <div class="nav-right">
                 <ul class="nav-links">
                     <li><a href="#how-it-works">How It Works</a></li>
