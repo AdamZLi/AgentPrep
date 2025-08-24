@@ -4,9 +4,9 @@
   "description": "The AI Agent That Creates Your Interview Prep Strategy",
   "main": "index.html",
   "scripts": {
-    "dev": "npx serve .",
+    "dev": "python3 -m http.server 3000",
     "build": "echo 'Static site - no build required'",
-    "start": "npx serve ."
+    "start": "python3 -m http.server 3000"
   },
   "keywords": [
     "ai",
